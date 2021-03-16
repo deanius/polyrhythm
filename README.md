@@ -52,6 +52,12 @@ If async effects like AJAX were represented as sounds, this diagram shows how th
 
 Being able to plug in a strategy ensures that the exact syntax of your code, and your timing information, are decoupled - the one is not expressed in terms of the other. This lets you write fewer lines, be more direct and declarative, and generally cut down on race conditions.
 
+Not only do these 5 modes handle not only what you'd want to do with RxJS, but they handle anything your users would expect code to do when async process overlap! You have the ease to change behavior to satisfy your pickiest users, without rewriting code - you only have to update your tests to match!
+
+![](https://s3.amazonaws.com/www.deanius.com/async-mode-table.png)
+ 
+Now let's dig into some examples.
+
 ---
 
 It's all RxJS underneath of course, but simpler, as shown in these examples.
